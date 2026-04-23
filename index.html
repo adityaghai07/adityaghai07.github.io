@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aditya Ghai | ML &amp; AI Engineer</title>
+  <meta name="description" content="Portfolio of Aditya Ghai | Machine Learning & AI Engineer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- Nav -->
+  <nav class="nav" id="nav">
+    <a href="#" class="nav__logo">AG</a>
+    <button class="nav__toggle" id="navToggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav__links" id="navLinks">
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#achievements">Achievements</a></li>
+      <li><a href="#blog">Blog</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero" id="hero">
+    <div class="hero__content reveal">
+      <div class="hero__tags">
+        <span class="hero__pill">LLM Pretraining</span>
+        <span class="hero__pill">AI Infra &amp; Systems</span>
+        <span class="hero__pill">Building Vithos</span>
+        <span class="hero__pill">5&times; Hackathon Winner</span>
+      </div>
+      <h1 class="hero__name">Aditya Ghai</h1>
+      <p class="hero__desc">
+        I work on hard problems, from pretraining large language models and designing AI infrastructure
+        to production-grade ML solutions. Passionate about pushing the boundaries
+        of what machines can learn.
+      </p>
+      <div class="hero__cta">
+        <a href="#projects" class="btn btn--primary">View Projects</a>
+        <a href="#contact" class="btn btn--outline">Get in Touch</a>
+      </div>
+    </div>
+    <div class="hero__stats reveal">
+      <div class="hero__stat">
+        <span class="hero__stat-value">5&times;</span>
+        <span class="hero__stat-label">Hackathon Wins</span>
+      </div>
+      <div class="hero__stat">
+        <span class="hero__stat-value">225M</span>
+        <span class="hero__stat-label">Param LLM from Scratch</span>
+      </div>
+      <div class="hero__stat">
+        <span class="hero__stat-value">800K</span>
+        <span class="hero__stat-label">Users Served</span>
+      </div>
+      <div class="hero__stat">
+        <span class="hero__stat-value">Vithos</span>
+        <span class="hero__stat-label">AI Health Platform</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience -->
+  <section class="section" id="experience">
+    <div class="container">
+      <h2 class="section__title reveal">Experience</h2>
+      <div class="timeline">
+
+        <div class="timeline__item reveal">
+          <div class="timeline__dot"></div>
+          <div class="timeline__card">
+            <span class="timeline__date mono">Sept 2025 – Present</span>
+            <h3>SDE Intern (ML + Dev)</h3>
+            <p class="timeline__company">Rimo LLC, Japan &bull; Remote</p>
+            <ul class="timeline__list">
+              <li>Architected and shipped RAG chat end-to-end,a production meeting transcript search system serving 800K users,on a 3-service microarchitecture (Go/Python + Cloud Run Jobs), with full ownership from design to deployment monitoring.</li>
+              <li>Built a real-time SSE streaming pipeline combining BM25 + Dense vector search (Ruri embeddings), RRF, and RuriV3 reranking; reduced query latency by 12% handling ~6,500 req/sec in production.</li>
+              <li>Designed an async distributed indexing system on GCP Cloud Run Jobs (NVIDIA L4 GPU) for chunking, embedding generation, and MongoDB Atlas writes,decoupled from the API layer to eliminate resource contention at scale.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline__item reveal">
+          <div class="timeline__dot"></div>
+          <div class="timeline__card">
+            <span class="timeline__date mono">Jan 2025 – Sept 2025</span>
+            <h3>AI Engineering Intern</h3>
+            <p class="timeline__company">3S SmartShips, Singapore &bull; Remote</p>
+            <ul class="timeline__list">
+              <li>Built a custom Gauge OCR pipeline for shipboard automation,collected and augmented domain-specific datasets, trained RF-DETR and YOLOv11 models optimized for mobile offline inference, and developed a custom algorithm for accurate gauge reading.</li>
+              <li>Deployed across 750+ dock ships via an Android app, fully automating repetitive manual inspection workflows for Tata NYK shipping operations.</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section class="section section--alt" id="projects">
+    <div class="container">
+      <h2 class="section__title reveal">Projects</h2>
+      <div class="projects__grid">
+
+        <div class="project-card project-card--has-media reveal">
+          <img class="project-card__img" src="assets/hindi_ag_slm.png" alt="AG Hindi SLM" loading="lazy" />
+          <div class="project-card__body">
+            <div class="project-card__header">
+              <span class="mono project-card__label">01</span>
+              <a href="https://github.com/adityaghai07/ag-hindi-slm" target="_blank" rel="noopener" class="project-card__link" aria-label="View on GitHub">&#8599;</a>
+            </div>
+            <h3>AG Hindi SLM</h3>
+            <p>A 225M parameter Hindi language model trained from scratch on ~4B tokens. Features Multi-head Latent Attention, Block Attention Residuals, and SwiGLU FFN. Trained on 3&times; RTX 4090s.</p>
+            <div class="project-card__tags">
+              <span class="tag">DDP</span>
+              <span class="tag">LLM Pretraining</span>
+              <span class="tag">Custom Tokenizer</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card project-card--has-media reveal">
+          <img class="project-card__img" src="assets/thehumanfunnel.png" alt="The Human Funnel" loading="lazy" />
+          <div class="project-card__body">
+            <div class="project-card__header">
+              <span class="mono project-card__label">02</span>
+              <a href="https://thehumanfunnel.in" target="_blank" rel="noopener" class="project-card__link" aria-label="Visit The Human Funnel">&#8599;</a>
+            </div>
+            <h3>The Human Funnel</h3>
+            <p>AI recruitment platform that automates candidate screening,filters thousands of resumes through multi-stage analysis, automated interviews, and data-driven ranking.</p>
+            <div class="project-card__tags">
+              <span class="tag">Multi-Agent Pipeline</span>
+              <span class="tag">LLM Orchestration</span>
+              <span class="tag">Calling System</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card project-card--has-media reveal">
+          <video class="project-card__video" src="assets/ytmoodlens_demo.mp4" autoplay loop muted playsinline preload="metadata"></video>
+          <div class="project-card__body">
+            <div class="project-card__header">
+              <span class="mono project-card__label">03</span>
+              <a href="https://github.com/adityaghai07/YtMoodLens" target="_blank" rel="noopener" class="project-card__link" aria-label="View on GitHub">&#8599;</a>
+            </div>
+            <h3>YtMoodLens</h3>
+            <p>Real-time YouTube comment sentiment analysis with a full MLOps pipeline,MLflow tracking, DVC versioning, AWS deployment, and a browser extension for instant results.</p>
+            <div class="project-card__tags">
+              <span class="tag">MLOps</span>
+              <span class="tag">AWS</span>
+              <span class="tag">Chrome Extension</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card project-card--has-media reveal">
+          <img class="project-card__img" src="assets/vithos.png" alt="Vithos" loading="lazy" />
+          <div class="project-card__body">
+            <div class="project-card__header">
+              <span class="mono project-card__label">04</span>
+              <a href="https://vithos.in" target="_blank" rel="noopener" class="project-card__link" aria-label="Visit Vithos">&#8599;</a>
+            </div>
+            <h3>Vithos</h3>
+            <p>AI-powered health management platform,upload lab PDFs, auto-extract biomarkers, track health changes over time, and get personalized insights from your complete medical history.</p>
+            <div class="project-card__tags">
+              <span class="tag">RAG Pipeline</span>
+              <span class="tag">OCR</span>
+              <span class="tag">Job Queue</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Achievements -->
+  <section class="section" id="achievements">
+    <div class="container">
+      <h2 class="section__title reveal">Achievements</h2>
+      <div class="achievements__grid">
+
+        <div class="achievement-card achievement-card--has-img reveal">
+          <img class="achievement-card__img" src="assets/convolve.jpeg" alt="Convolve 4.0 Winners" loading="lazy" />
+          <div class="achievement-card__body">
+            <span class="achievement-card__date mono">Feb 2026</span>
+            <h3>Convolve 4.0,1st Runner Up</h3>
+            <p class="achievement-card__issuer">IIT Guwahati &bull; Pan IIT Competition</p>
+            <p>Built an end-to-end local OCR pipeline for handwritten &amp; vernacular texts under strict VRAM and latency constraints, achieving 82% DLA. Built for IDFC First Bank.</p>
+          </div>
+        </div>
+
+        <div class="achievement-card achievement-card--has-img reveal">
+          <img class="achievement-card__img" src="assets/kaggle.png" alt="Kaggle Notebooks Expert" loading="lazy" />
+          <div class="achievement-card__body">
+            <span class="achievement-card__date mono">Jun 2025</span>
+            <h3>Kaggle Notebooks Expert</h3>
+            <p class="achievement-card__issuer">Kaggle</p>
+            <p>Recognized as a Notebooks Expert on the Kaggle platform, though I am not very active here :)</p>
+          </div>
+        </div>
+
+        <div class="achievement-card achievement-card--has-img reveal">
+          <img class="achievement-card__img" src="assets/hackbyte.jpeg" alt="MLH HackByte 2.0 Winner" loading="lazy" />
+          <div class="achievement-card__body">
+            <span class="achievement-card__date mono">Apr 2024</span>
+            <h3>MLH HackByte 2.0 Winner</h3>
+            <p class="achievement-card__issuer">IIITDM Jabalpur</p>
+            <p>Developed a deep learning model that takes badminton videos and provides overall player analysis,detailed reports and graphs on shot selection and movement.</p>
+          </div>
+        </div>
+
+        <div class="achievement-card achievement-card--has-img reveal">
+          <img class="achievement-card__img" src="assets/indore.jpeg" alt="IIT Indore AnalyticaX" loading="lazy" />
+          <div class="achievement-card__body">
+            <span class="achievement-card__date mono">Mar 2024</span>
+            <h3>AnalyticaX ML Competition Winner</h3>
+            <p class="achievement-card__issuer">IIT Indore</p>
+            <p>Complete EDA + modelling on a complex real-world vaccination dataset, achieving 0.872 ROC-AUC with stratified cross-validation.</p>
+          </div>
+        </div>
+
+        <div class="achievement-card achievement-card--has-img reveal">
+          <img class="achievement-card__img" src="assets/roorkee_2.JPG" alt="ThermaOracle IIT Roorkee" loading="lazy" />
+          <div class="achievement-card__body">
+            <span class="achievement-card__date mono">Mar 2024</span>
+            <h3>ThermaOracle ML Competition Winners</h3>
+            <p class="achievement-card__issuer">IIT Roorkee</p>
+            <p>Surpassed teams from top IITs in an advanced forecasting &amp; regressive temperature prediction competition with intricate data design.</p>
+          </div>
+        </div>
+
+        <div class="achievement-card achievement-card--has-img reveal">
+          <img class="achievement-card__img" src="assets/jodhpur.jpeg" alt="IIT Jodhpur BioInnovate" loading="lazy" />
+          <div class="achievement-card__body">
+            <span class="achievement-card__date mono">Jan 2024</span>
+            <h3>AI BioInnovate Hackathon Champion</h3>
+            <p class="achievement-card__issuer">IIT Jodhpur</p>
+            <p>Devised a computationally efficient clustering approach for the Moses dataset,1.5M molecules in SMILES format,maintaining high accuracy while minimizing resources.</p>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Blog -->
+  <section class="section section--alt" id="blog">
+    <div class="container">
+      <h2 class="section__title reveal">Blog</h2>
+      <p class="section__subtitle reveal">Latest articles from Medium</p>
+      <div class="blog__grid" id="blogGrid">
+        <div class="blog__loading mono">Loading articles...</div>
+      </div>
+      <div class="blog__more reveal" style="margin-top:2rem;text-align:center;">
+        <a href="https://medium.com/@adityaghailbdrp1" target="_blank" rel="noopener" class="btn btn--outline">
+          Read all articles &rarr;
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact / Footer -->
+  <section class="section contact" id="contact">
+    <div class="container contact__inner reveal">
+      <div class="contact__photo">
+        <div class="contact__avatar" id="avatar"><img src="assets/aditya_pic.jpeg" alt="Aditya Ghai" /></div>
+      </div>
+      <div class="contact__info">
+        <h2>Let's Connect</h2>
+        <p>Feel free to reach out for collaborations, research discussions, or just a friendly chat about ML &amp; AI.</p>
+        <div class="contact__links">
+          <a href="https://github.com/adityaghai07" target="_blank" rel="noopener" aria-label="GitHub">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+          </a>
+          <a href="https://www.linkedin.com/in/aditya-ghai/" target="_blank" rel="noopener" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          </a>
+          <a href="https://x.com/aditya_ghai07" target="_blank" rel="noopener" aria-label="X / Twitter">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+          </a>
+          <a href="https://medium.com/@adityaghailbdrp1" target="_blank" rel="noopener" aria-label="Medium">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24"><path d="M13.54 12a6.8 6.8 0 01-6.77 6.82A6.8 6.8 0 010 12a6.8 6.8 0 016.77-6.82A6.8 6.8 0 0113.54 12zm7.42 0c0 3.54-1.51 6.42-3.38 6.42-1.87 0-3.39-2.88-3.39-6.42s1.52-6.42 3.39-6.42 3.38 2.88 3.38 6.42M24 12c0 3.17-.53 5.75-1.19 5.75-.66 0-1.19-2.58-1.19-5.75s.53-5.75 1.19-5.75C23.47 6.25 24 8.83 24 12z"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p class="mono">&copy; 2026 Aditya Ghai.</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
