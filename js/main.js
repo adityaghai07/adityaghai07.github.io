@@ -73,6 +73,31 @@
 
   document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
 
+  // --- Defer project videos until they are close to the viewport ---
+  // They carry data-src instead of src so nothing downloads on first paint;
+  // the poster stands in until then.
+  const lazyVideos = document.querySelectorAll('video[data-src]');
+
+  if (lazyVideos.length) {
+    const videoObserver = new IntersectionObserver(
+      (entries) => {
+        entries.forEach(entry => {
+          if (!entry.isIntersecting) return;
+          const video = entry.target;
+          videoObserver.unobserve(video);
+          video.src = video.dataset.src;
+          video.removeAttribute('data-src');
+          video.load();
+          const play = video.play();
+          if (play) play.catch(() => { video.controls = true; });
+        });
+      },
+      { rootMargin: '300px 0px' }
+    );
+
+    lazyVideos.forEach(v => videoObserver.observe(v));
+  }
+
   // --- Fetch Medium articles ---
   const blogGrid = document.getElementById('blogGrid');
   const MEDIUM_USER = 'adityaghailbdrp1';

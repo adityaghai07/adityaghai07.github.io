@@ -200,7 +200,7 @@
 
         <a class="project-card reveal" href="https://github.com/adityaghai07/ag-hindi-slm" target="_blank" rel="noopener">
           <div class="project-card__media">
-            <img class="project-card__img" src="assets/hindi_ag_slm.png" alt="AG Hindi SLM" loading="lazy" />
+            <img class="project-card__img" src="assets/hindi_ag_slm.jpg" alt="AG Hindi SLM" loading="lazy" />
           </div>
           <div class="project-card__body">
             <div class="project-card__header">
@@ -219,7 +219,7 @@
 
         <a class="project-card reveal" href="https://thehumanfunnel.in" target="_blank" rel="noopener">
           <div class="project-card__media">
-            <img class="project-card__img" src="assets/thehumanfunnel.png" alt="The Human Funnel" loading="lazy" />
+            <img class="project-card__img" src="assets/thehumanfunnel.jpg" alt="The Human Funnel" loading="lazy" />
           </div>
           <div class="project-card__body">
             <div class="project-card__header">
@@ -238,7 +238,11 @@
 
         <a class="project-card reveal" href="https://github.com/adityaghai07/YtMoodLens" target="_blank" rel="noopener">
           <div class="project-card__media">
-            <video class="project-card__video" src="assets/ytmoodlens_demo.mp4" autoplay loop muted playsinline preload="metadata"></video>
+            <!-- Source is attached by JS only once the card nears the viewport,
+                 so the clip never competes with the initial page load. -->
+            <video class="project-card__video" data-src="assets/ytmoodlens_demo.mp4"
+                   poster="assets/ytmoodlens_poster.jpg" loop muted playsinline preload="none"
+                   aria-label="YtMoodLens demo"></video>
           </div>
           <div class="project-card__body">
             <div class="project-card__header">
@@ -257,7 +261,7 @@
 
         <a class="project-card reveal" href="https://vithos.in" target="_blank" rel="noopener">
           <div class="project-card__media">
-            <img class="project-card__img" src="assets/vithos.png" alt="Vithos" loading="lazy" />
+            <img class="project-card__img" src="assets/vithos.jpg" alt="Vithos" loading="lazy" />
           </div>
           <div class="project-card__body">
             <div class="project-card__header">
@@ -290,7 +294,7 @@
 
         <article class="achievement-card reveal">
           <div class="achievement-card__media">
-            <img class="achievement-card__img" src="assets/convolve.jpeg" alt="Convolve 4.0 Winners" loading="lazy" />
+            <img class="achievement-card__img" src="assets/convolve.jpg" alt="Convolve 4.0 Winners" loading="lazy" />
           </div>
           <div class="achievement-card__body">
             <span class="achievement-card__date mono">Feb 2026</span>
@@ -302,7 +306,7 @@
 
         <article class="achievement-card reveal">
           <div class="achievement-card__media achievement-card__media--contain">
-            <img class="achievement-card__img" src="assets/kaggle.png" alt="Kaggle Notebooks Expert" loading="lazy" />
+            <img class="achievement-card__img" src="assets/kaggle.jpg" alt="Kaggle Notebooks Expert" loading="lazy" />
           </div>
           <div class="achievement-card__body">
             <span class="achievement-card__date mono">Jun 2025</span>
@@ -314,7 +318,7 @@
 
         <article class="achievement-card reveal">
           <div class="achievement-card__media">
-            <img class="achievement-card__img" src="assets/hackbyte.jpeg" alt="MLH HackByte 2.0 Winner" loading="lazy" />
+            <img class="achievement-card__img" src="assets/hackbyte.jpg" alt="MLH HackByte 2.0 Winner" loading="lazy" />
           </div>
           <div class="achievement-card__body">
             <span class="achievement-card__date mono">Apr 2024</span>
@@ -326,7 +330,7 @@
 
         <article class="achievement-card reveal">
           <div class="achievement-card__media">
-            <img class="achievement-card__img" src="assets/indore.jpeg" alt="IIT Indore AnalyticaX" loading="lazy" />
+            <img class="achievement-card__img" src="assets/indore.jpg" alt="IIT Indore AnalyticaX" loading="lazy" />
           </div>
           <div class="achievement-card__body">
             <span class="achievement-card__date mono">Mar 2024</span>
@@ -338,7 +342,7 @@
 
         <article class="achievement-card reveal">
           <div class="achievement-card__media">
-            <img class="achievement-card__img" src="assets/roorkee_2.JPG" alt="ThermaOracle IIT Roorkee" loading="lazy" />
+            <img class="achievement-card__img" src="assets/roorkee_2.jpg" alt="ThermaOracle IIT Roorkee" loading="lazy" />
           </div>
           <div class="achievement-card__body">
             <span class="achievement-card__date mono">Mar 2024</span>
@@ -350,7 +354,7 @@
 
         <article class="achievement-card reveal">
           <div class="achievement-card__media">
-            <img class="achievement-card__img" src="assets/jodhpur.jpeg" alt="IIT Jodhpur BioInnovate" loading="lazy" />
+            <img class="achievement-card__img" src="assets/jodhpur.jpg" alt="IIT Jodhpur BioInnovate" loading="lazy" />
           </div>
           <div class="achievement-card__body">
             <span class="achievement-card__date mono">Jan 2024</span>
@@ -395,7 +399,7 @@
 
       <div class="contact__inner reveal">
         <div class="contact__photo">
-          <div class="contact__avatar" id="avatar"><img src="assets/aditya_pic.jpeg" alt="Aditya Ghai" /></div>
+          <div class="contact__avatar" id="avatar"><img src="assets/aditya_pic.jpg" alt="Aditya Ghai" width="400" height="400" loading="lazy" decoding="async" /></div>
         </div>
         <div class="contact__info">
           <p>
