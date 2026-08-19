@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Aditya Ghai | ML &amp; AI Engineer</title>
-  <meta name="description" content="Aditya Ghai — ML &amp; AI Engineer. LLM pretraining, AI infrastructure, and production ML across 3 startups. Teaching hard ML on YouTube." />
+  <meta name="description" content="Aditya Ghai, ML &amp; AI Engineer. LLM pretraining, AI infrastructure, and production ML across 3 startups. Teaching hard ML on YouTube." />
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23111'/%3E%3Ctext x='32' y='44' font-family='Helvetica,Arial,sans-serif' font-size='30' font-weight='700' fill='%23fff' text-anchor='middle'%3EAG%3C/text%3E%3C/svg%3E" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -46,7 +46,7 @@
       <h1 class="hero__name">Aditya Ghai</h1>
 
       <p class="hero__desc">
-        I work on hard problems &mdash; pretraining large language models, designing AI infrastructure,
+        I work on hard problems: pretraining large language models, designing AI infrastructure,
         and shipping production-grade ML at <strong>3 startups</strong>. When I'm not building, I break down
         the hard parts of ML <a href="#teaching">on YouTube</a>.
       </p>
@@ -88,20 +88,20 @@
         <span class="section__index mono">01</span>
         <h2 class="section__title">Experience</h2>
       </div>
-      <p class="section__subtitle reveal">Building and shipping ML in production across <strong>3 startups</strong> &mdash; from LLM systems to on-device computer vision.</p>
+      <p class="section__subtitle reveal">Building and shipping ML in production across <strong>3 startups</strong>, from LLM systems to on-device computer vision.</p>
 
       <div class="timeline">
 
         <div class="timeline__item reveal">
           <div class="timeline__dot"></div>
           <article class="timeline__card">
-            <span class="timeline__date mono">Sept 2025 &mdash; Present</span>
-            <h3>SDE Intern (ML + Dev)</h3>
+            <span class="timeline__date mono">Sept 2025 &ndash; Present</span>
+            <h3>SDE (ML + Dev)</h3>
             <p class="timeline__company">Rimo LLC, Japan <span class="dot-sep">&bull;</span> Remote</p>
             <ul class="timeline__list">
-              <li>Architected and shipped RAG chat end-to-end &mdash; a production meeting transcript search system serving 800K users &mdash; on a 3-service microarchitecture (Go/Python + Cloud Run Jobs), with full ownership from design to deployment monitoring.</li>
+              <li>Architected and shipped RAG chat end-to-end, a production meeting transcript search system serving 800K users, on a 3-service microarchitecture (Go/Python + Cloud Run Jobs), with full ownership from design to deployment monitoring.</li>
               <li>Built a real-time SSE streaming pipeline combining BM25 + Dense vector search (Ruri embeddings), RRF, and RuriV3 reranking; reduced query latency by 12% handling ~6,500 req/sec in production.</li>
-              <li>Designed an async distributed indexing system on GCP Cloud Run Jobs (NVIDIA L4 GPU) for chunking, embedding generation, and MongoDB Atlas writes &mdash; decoupled from the API layer to eliminate resource contention at scale.</li>
+              <li>Designed an async distributed indexing system on GCP Cloud Run Jobs (NVIDIA L4 GPU) for chunking, embedding generation, and MongoDB Atlas writes, decoupled from the API layer to eliminate resource contention at scale.</li>
             </ul>
           </article>
         </div>
@@ -109,11 +109,11 @@
         <div class="timeline__item reveal">
           <div class="timeline__dot"></div>
           <article class="timeline__card">
-            <span class="timeline__date mono">Jan 2025 &mdash; Sept 2025</span>
-            <h3>AI Engineering Intern</h3>
+            <span class="timeline__date mono">Jan 2025 &ndash; Sept 2025</span>
+            <h3>AI Engineer</h3>
             <p class="timeline__company">3S SmartShips, Singapore <span class="dot-sep">&bull;</span> Remote</p>
             <ul class="timeline__list">
-              <li>Built a custom Gauge OCR pipeline for shipboard automation &mdash; collected and augmented domain-specific datasets, trained RF-DETR and YOLOv11 models optimized for mobile offline inference, and developed a custom algorithm for accurate gauge reading.</li>
+              <li>Built a custom Gauge OCR pipeline for shipboard automation: collected and augmented domain-specific datasets, trained RF-DETR and YOLOv11 models optimized for mobile offline inference, and developed a custom algorithm for accurate gauge reading.</li>
               <li>Deployed across 750+ dock ships via an Android app, fully automating repetitive manual inspection workflows for Tata NYK shipping operations.</li>
             </ul>
           </article>
@@ -131,7 +131,7 @@
         <h2 class="section__title">Teaching Hard ML</h2>
       </div>
       <p class="section__subtitle reveal">
-        I break down the parts of ML most tutorials skip &mdash; pretraining, distributed training, and real system design.
+        I break down the parts of ML most tutorials skip: pretraining, distributed training, and real system design.
         No wrappers, no hand-waving.
       </p>
 
@@ -217,17 +217,36 @@
           </div>
         </a>
 
-        <a class="project-card reveal" href="https://thehumanfunnel.in" target="_blank" rel="noopener">
+        <a class="project-card reveal" href="https://github.com/adityaghai07/distbook" target="_blank" rel="noopener">
           <div class="project-card__media">
-            <img class="project-card__img" src="assets/thehumanfunnel.jpg" alt="The Human Funnel" loading="lazy" />
+            <img class="project-card__img" src="assets/distbook.jpg" alt="distbook pipeline parallelism schedules" loading="lazy" />
           </div>
           <div class="project-card__body">
             <div class="project-card__header">
               <span class="mono project-card__label">02</span>
               <span class="project-card__arrow" aria-hidden="true">&#8599;</span>
             </div>
+            <h3>distbook</h3>
+            <p>Scratch implementations of distributed training techniques (naive pipeline parallelism, GPipe, 1F1B, ZB1P, DualPipeV), written to understand the comms, scheduling, and memory tradeoffs underneath. Gradients verified against plain autograd to ~1e-9.</p>
+            <div class="tags">
+              <span class="tag">Pipeline Parallelism</span>
+              <span class="tag">Zero-Bubble</span>
+              <span class="tag">PyTorch</span>
+            </div>
+          </div>
+        </a>
+
+        <a class="project-card reveal" href="https://thehumanfunnel.in" target="_blank" rel="noopener">
+          <div class="project-card__media">
+            <img class="project-card__img" src="assets/thehumanfunnel.jpg" alt="The Human Funnel" loading="lazy" />
+          </div>
+          <div class="project-card__body">
+            <div class="project-card__header">
+              <span class="mono project-card__label">03</span>
+              <span class="project-card__arrow" aria-hidden="true">&#8599;</span>
+            </div>
             <h3>The Human Funnel</h3>
-            <p>AI recruitment platform that automates candidate screening &mdash; filters thousands of resumes through multi-stage analysis, automated interviews, and data-driven ranking.</p>
+            <p>AI recruitment platform that automates candidate screening. Filters thousands of resumes through multi-stage analysis, automated interviews, and data-driven ranking.</p>
             <div class="tags">
               <span class="tag">Multi-Agent Pipeline</span>
               <span class="tag">LLM Orchestration</span>
@@ -246,11 +265,11 @@
           </div>
           <div class="project-card__body">
             <div class="project-card__header">
-              <span class="mono project-card__label">03</span>
+              <span class="mono project-card__label">04</span>
               <span class="project-card__arrow" aria-hidden="true">&#8599;</span>
             </div>
             <h3>YtMoodLens</h3>
-            <p>Real-time YouTube comment sentiment analysis with a full MLOps pipeline &mdash; MLflow tracking, DVC versioning, AWS deployment, and a browser extension for instant results.</p>
+            <p>Real-time YouTube comment sentiment analysis with a full MLOps pipeline: MLflow tracking, DVC versioning, AWS deployment, and a browser extension for instant results.</p>
             <div class="tags">
               <span class="tag">MLOps</span>
               <span class="tag">AWS</span>
@@ -265,11 +284,11 @@
           </div>
           <div class="project-card__body">
             <div class="project-card__header">
-              <span class="mono project-card__label">04</span>
+              <span class="mono project-card__label">05</span>
               <span class="project-card__arrow" aria-hidden="true">&#8599;</span>
             </div>
             <h3>Vithos</h3>
-            <p>AI-powered health management platform &mdash; upload lab PDFs, auto-extract biomarkers, track health changes over time, and get personalized insights from your complete medical history.</p>
+            <p>AI-powered health management platform. Upload lab PDFs, auto-extract biomarkers, track health changes over time, and get personalized insights from your complete medical history.</p>
             <div class="tags">
               <span class="tag">RAG Pipeline</span>
               <span class="tag">OCR</span>
@@ -298,7 +317,7 @@
           </div>
           <div class="achievement-card__body">
             <span class="achievement-card__date mono">Feb 2026</span>
-            <h3>Convolve 4.0 &mdash; 1st Runner Up</h3>
+            <h3>1st Runner Up at Convolve 4.0</h3>
             <p class="achievement-card__issuer">IIT Guwahati <span class="dot-sep">&bull;</span> Pan IIT Competition</p>
             <p>Built an end-to-end local OCR pipeline for handwritten &amp; vernacular texts under strict VRAM and latency constraints, achieving 82% DLA. Built for IDFC First Bank.</p>
           </div>
@@ -318,13 +337,25 @@
 
         <article class="achievement-card reveal">
           <div class="achievement-card__media">
+            <img class="achievement-card__img" src="assets/unsloth.jpg" alt="Direct Windows support for Unsloth" loading="lazy" />
+          </div>
+          <div class="achievement-card__body">
+            <span class="achievement-card__date mono">Feb 2025</span>
+            <h3>Unsloth Bug Bounty ($300)</h3>
+            <p class="achievement-card__issuer">Unsloth AI <span class="dot-sep">&bull;</span> Open Source</p>
+            <p>Fixed the Windows compatibility issue that blocked native installs, reworking dependency resolution so <span class="mono">pip install unsloth[windows]</span> works without manual setup. Shipped upstream and <a href="https://github.com/unslothai/unsloth/discussions/1849" target="_blank" rel="noopener" class="link-underline">announced as direct Windows support</a>. Not actively contributing there these days.</p>
+          </div>
+        </article>
+
+        <article class="achievement-card reveal">
+          <div class="achievement-card__media">
             <img class="achievement-card__img" src="assets/hackbyte.jpg" alt="MLH HackByte 2.0 Winner" loading="lazy" />
           </div>
           <div class="achievement-card__body">
             <span class="achievement-card__date mono">Apr 2024</span>
             <h3>MLH HackByte 2.0 Winner</h3>
             <p class="achievement-card__issuer">IIITDM Jabalpur</p>
-            <p>Developed a deep learning model that takes badminton videos and provides overall player analysis &mdash; detailed reports and graphs on shot selection and movement.</p>
+            <p>Developed a deep learning model that takes badminton videos and provides overall player analysis, with detailed reports and graphs on shot selection and movement.</p>
           </div>
         </article>
 
@@ -360,7 +391,19 @@
             <span class="achievement-card__date mono">Jan 2024</span>
             <h3>AI BioInnovate Hackathon Champion</h3>
             <p class="achievement-card__issuer">IIT Jodhpur</p>
-            <p>Devised a computationally efficient clustering approach for the Moses dataset &mdash; 1.5M molecules in SMILES format &mdash; maintaining high accuracy while minimizing resources.</p>
+            <p>Devised a computationally efficient clustering approach for the Moses dataset (1.5M molecules in SMILES format), maintaining high accuracy while minimizing resources.</p>
+          </div>
+        </article>
+
+        <article class="achievement-card reveal">
+          <div class="achievement-card__media">
+            <img class="achievement-card__img" src="assets/sih.jpg" alt="Smart India Hackathon 2023 Finalist" loading="lazy" />
+          </div>
+          <div class="achievement-card__body">
+            <span class="achievement-card__date mono">Dec 2023</span>
+            <h3>Smart India Hackathon Finalist</h3>
+            <p class="achievement-card__issuer">Ministry of Education, Govt. of India</p>
+            <p>Reached the national grand finale of India's largest hackathon, selected from thousands of teams across the country to build a solution for a government problem statement. Was in my 1st year at the time, so no win :)</p>
           </div>
         </article>
 

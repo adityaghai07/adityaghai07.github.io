@@ -1,5 +1,5 @@
 /* ========================================
-   Aditya Ghai — Portfolio JS
+   Aditya Ghai Portfolio JS
    ======================================== */
 
 (function () {
